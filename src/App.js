@@ -11,8 +11,8 @@ import js from "./Resources/images/5.png";
 import sql from "./Resources/images/6.png"; 
 import apI from "./Resources/images/7.png";
 import giT from "./Resources/images/8.png";
-import { FaGithub, FaInstagram, FaDownload } from "react-icons/fa";
-const resumeLink = "./Resources/images/Resume.pdf"; // Replace with the actual path to your resume
+import { FaGithub, FaInstagram, FaDownload,FaMailchimp } from "react-icons/fa";
+import resumeLink from "./Resources/images/Ashin_Paul_resume.pdf"; // Replace with the actual path to your resume
 const sections = [
   { id: "home", title: "Home" },
   { id: "about", title: "About" },
@@ -147,11 +147,20 @@ const App = () => {
                   <img src="./Resources/images/construction.png" alt="Under Construction" className="construction-icon" />
                 </div>) : section.id==="contact" ? (
                    <div className="contact-content">
-    <h2 className="contact-title">Contact Me</h2>
+    {/* <h2 className="contact-title">Contact Me</h2> */}
+   <div className="text-center">
+    <a href="mailto:ashinpaul46@gmail.com" 
+       className="btn btn-success">
+      <FaMailchimp className="me-5" /> MAIL ME
+    </a>
+</div>
+    <div className="text-center">
+    <a href="https://github.com/ashinpaul"  
+       className="btn btn-success resume-download"><FaGithub className="me-5"/>GITHUB</a></div>
   <div className="text-center">
     <a href={resumeLink} 
        download 
-       className="btn btn-success">
+       className="btn btn-success resume-download">
       <FaDownload className="me-2" /> Download Resume
     </a>
   </div>

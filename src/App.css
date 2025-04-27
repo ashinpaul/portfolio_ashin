@@ -109,7 +109,7 @@ body {
 
 /* Background Colors for Sections */
 #home {
-  background-image: url(header-bg.jpg);
+  background-image: url(header-bg-77.JPG);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -276,8 +276,9 @@ body {
   .about-card {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     padding: 20px;
+    min-width: 379px;
   }
    .tech-card {
     width: 80px;
@@ -293,8 +294,8 @@ body {
     top: -25px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 100px;
     object-fit: contain;
   }
   
@@ -327,13 +328,13 @@ body {
 /* About Me Card */
 .about-card {
   flex: 1;
-  min-width: 300px;
+  /* min-width: 300px; */
   max-width: 40%;
   /* background: white; */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: justify;
 }
 .about-card p,ul{
   color: #000000;
@@ -366,7 +367,7 @@ body {
 
 /* Image Overflows from Card */
 .tech-card img {
-  position: absolute;
+  position: relative;
   top: -26px; /* Moves image above the card */
   left: 50%;
   transform: translateX(-50%);
@@ -398,6 +399,9 @@ body {
 
   .tech-cards {
     grid-template-columns: repeat(3, 1fr); /* Show 2 columns on smaller screens */
+    gap: 5px;
+        min-width: 292px;
+
   }
   /* ----------------------------------------------------------- */
   .sections-container {
@@ -431,6 +435,15 @@ body {
     position: static;
     transform: none;
     text-align: center;
+  }
+  .tech-card img {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 150px;
+    object-fit: contain;
   }
 }
 /* ------------------if exeeds 1760px */
