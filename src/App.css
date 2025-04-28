@@ -109,7 +109,7 @@ body {
 
 /* Background Colors for Sections */
 #home {
-  background-image: url(header-bg-77.JPG);
+  background-image: url(header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -190,7 +190,7 @@ body {
 /* RESPONSIVE DESIGN */
 
 /* Tablet View (768px and Below) */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .home-content {
   display: flex;
   justify-content: space-between;
@@ -422,7 +422,7 @@ body {
   }
 
   .nav-list {
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
   }
 
@@ -497,15 +497,23 @@ body {
 }
 
 .download-button {
+  width: 100%;
   display: inline-flex;
   align-items: center;
-  background-color: green;
   color: white;
   padding: 10px;
   border-radius: 4px;
   text-decoration: none;
+  box-shadow: 2px 2px 5px #000000;
+
 }
 
 .download-button:hover {
   background-color: darkgreen;
+}
+.ico-mail{
+  background-color: rgb(176, 40, 6);
+}
+.ico-git{
+  background-color: rgb(0, 0, 0);
 }

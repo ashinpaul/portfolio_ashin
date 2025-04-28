@@ -150,17 +150,17 @@ const App = () => {
     {/* <h2 className="contact-title">Contact Me</h2> */}
    <div className="text-center">
     <a href="mailto:ashinpaul46@gmail.com" 
-       className="btn btn-success">
+       className="btn download-button ico-mail">
       <FaMailchimp className="me-5" /> MAIL ME
     </a>
 </div>
     <div className="text-center">
     <a href="https://github.com/ashinpaul"  
-       className="btn btn-success resume-download"><FaGithub className="me-5"/>GITHUB</a></div>
+       className="btn ico-git resume-download download-button"><FaGithub className="me-5"/>GITHUB</a></div>
   <div className="text-center">
     <a href={resumeLink} 
        download 
-       className="btn btn-success resume-download">
+       className="btn btn-success resume-download download-button">
       <FaDownload className="me-2" /> Download Resume
     </a>
   </div>
