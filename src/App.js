@@ -97,7 +97,7 @@ const App = () => {
                     <p>
                       I'm a passionate <strong>Full-Stack Developer</strong> with a diverse educational background and professional experience. 
                       I hold a <strong>Master's Degree in Computer Applications (MCA)</strong> and a <strong>Bachelor's Degree in Computer Applications (BCA)</strong>. 
-                      Currently, I work at <strong>Macom</strong> and have completed an internship at <strong>RLabz Artists</strong>, where I honed my skills in web and backend development.
+                      Currently, I work at <strong>Macom</strong> and have completed an internship at <strong>RLabz</strong>, where I honed my skills in web and backend development.
                     </p>
                     <h3>Qualifications:</h3>
                     <ul>
